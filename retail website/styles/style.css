@@ -285,9 +285,9 @@ nav {
 /* hero section styles */
 
 .hero {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("/assets/camping.jpg");
-    background-image: -o-linear-gradient(bottom, #222, rgba(34, 34, 34, 0)), url("/assets/camping.jpg");
-    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("/assets/camping.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("../assets/camping.jpg");
+    background-image: -o-linear-gradient(bottom, #222, rgba(34, 34, 34, 0)), url("../assets/camping.jpg");
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("../assets/camping.jpg");
     background-position: 50% 50%;
     background-size: auto, cover;
 }
@@ -423,9 +423,9 @@ img[alt="rectangle"] {
 /* safe section styles*/
 
 #safe {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.17)), to(#222)), url("/assets/camping2.jpg");
-    background-image: -o-linear-gradient(top, rgba(34, 34, 34, 0.17), #222), url("/assets/camping2.jpg");
-    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url("/assets/camping2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.17)), to(#222)), url("../assets/camping2.jpg");
+    background-image: -o-linear-gradient(top, rgba(34, 34, 34, 0.17), #222), url("../assets/camping2.jpg");
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url("../assets/camping2.jpg");
     background-size: auto, cover;
 }
 
@@ -558,7 +558,7 @@ img[alt="rectangle"] {
     top: 6%;
     left: 0px;
     min-height: 440px;
-    background-image: url("/assets/woman.jpg");
+    background-image: url("../assets/woman.jpg");
     width: 30%;
     border-radius: 5px;
     background-position: 91% 61%;
@@ -607,9 +607,9 @@ footer {
 /* hero section styles*/
 
 #about_page_hero {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("/assets/friends.jpg");
-    background-image: -o-linear-gradient(bottom, #222, rgba(34, 34, 34, 0)), url("/assets/friends.jpg");
-    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("/assets/friends.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("../assets/friends.jpg");
+    background-image: -o-linear-gradient(bottom, #222, rgba(34, 34, 34, 0)), url("../assets/friends.jpg");
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("../assets/friends.jpg");
     background-size: auto, cover;
 }
 
@@ -642,7 +642,7 @@ footer {
 /* owners section */
 
 #owners_left_content {
-    background-image: url("/assets/couple.jpg");
+    background-image: url("../assets/couple.jpg");
     height: 90%;
 }
 
@@ -674,9 +674,9 @@ footer {
 /* help section styles */
 
 #help {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("/assets/word.jpg");
-    background-image: -o-linear-gradient(bottom, #222, rgba(34, 34, 34, 0)), url("/assets/word.jpg");
-    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("/assets/word.jpg");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("../assets/word.jpg");
+    background-image: -o-linear-gradient(bottom, #222, rgba(34, 34, 34, 0)), url("../assets/word.jpg");
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("../assets/word.jpg");
     background-size: auto, cover;
 }
 
@@ -698,7 +698,7 @@ footer {
 
 .fetured_item {
     min-height: 250px;
-    background-image: url("/assets/girl.jpg");
+    background-image: url("../assets/girl.jpg");
     background-size: cover;
     background-position: 0 50%;
     border-radius: 5px;
@@ -764,9 +764,9 @@ footer {
 /* hero section */
 
 #donate_hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.56)), to(#222)), url("/assets/people.jpg");
-    background-image: -o-linear-gradient(top, rgba(34, 34, 34, 0.56), #222), url("/assets/people.jpg");
-    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.56), #222), url("/assets/people.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.56)), to(#222)), url("../assets/people.jpg");
+    background-image: -o-linear-gradient(top, rgba(34, 34, 34, 0.56), #222), url("../assets/people.jpg");
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.56), #222), url("../assets/people.jpg");
     background-size: auto, cover;
 }
 
@@ -809,9 +809,9 @@ footer {
 /* conact page hero styles */
 
 #contact_page_hero {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(76%, #222), color-stop(84%, rgba(34, 34, 34, 0.18))), url("/assets/young_girl.jpg");
-    background-image: -o-linear-gradient(left, #222 76%, rgba(34, 34, 34, 0.18) 84%), url("/assets/young_girl.jpg");
-    background-image: linear-gradient(90deg, #222 76%, rgba(34, 34, 34, 0.18) 84%), url("/assets/young_girl.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(76%, #222), color-stop(84%, rgba(34, 34, 34, 0.18))), url("../assets/young_girl.jpg");
+    background-image: -o-linear-gradient(left, #222 76%, rgba(34, 34, 34, 0.18) 84%), url("../assets/young_girl.jpg");
+    background-image: linear-gradient(90deg, #222 76%, rgba(34, 34, 34, 0.18) 84%), url("../assets/young_girl.jpg");
     background-size: auto, contain;
     background-position: 0px 0px, 100%;
     background-repeat: repeat, no-repeat;
@@ -921,7 +921,7 @@ address {
     width: 50%;
     min-height: 400px;
     padding: 0;
-    background-image: url("/assets/girl.jpg");
+    background-image: url("../assets/girl.jpg");
 }
 
 #inner_card_text {
