@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/Favicon.png">
+    <title>Website Of Shop</title>
+</head>
+
+<body>
+
+    <!-- banner and navigation -->
+    <nav>
+        <div class="banner">
+            <div class="container">
+                <p class="text"><a href="announcement.html" class="link">Announcement</a> How we're responding to COVID-19</p>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="container space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="links_wrapper">
+                    <ul class="pages">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li class="cart_button">
+                            <img class="cart_img" src="assets/cart.svg" alt="cart button">
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    <button class="burger_btn"><i class="fa fa-bars" id="burger_icon"></i></button>
+                </div>
+                <div class="responsive_nav_wrapper">
+                    <ul class="pages" id="responisve_pages_list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="cart_header space_between">
+                <h4>Your Cart</h4>
+                <i class="fa fa-close"></i>
+            </div>
+            <hr>
+            <div class="cart_items_wrapper">
+                <p>No Items Found</p>
+            </div>
+        </div>
+
+        <div class="cart_darken_background"></div>
+
+    </nav>
+
+
+    <!-- hero section -->
+    <section class="hero" id="about_page_hero">
+        <div class="container">
+            <div class="hero_text_wrapper">
+                <div style="width: 40%;">
+                    <h1 class="hero_header">Your Adventure Awaits</h1>
+                    <p class="hero_text text">Acme Outdoors has everything you need to help you get started today. Check out our wonderful collection of gear that will make your next adventure complete.</p>
+                    <a href="shop.html" class="hero_button">shop merch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bussiness details section -->
+    <section class="details">
+        <div class="container">
+            <div class="details_header">
+                <div style="width: 40%;text-align: center;">
+                    <p style="color:#333;">WHY ACME OUTDOORS?</p>
+                    <h2 style="color:#222;font-size: 40px;margin: 23px 0;">We're the best in the business.</h2>
+                    <p style="color:#333;">From more than 30 years, we've been leading the way across Oklahoma — creating the best possible customer experience since 1989.</p>
+                </div>
+            </div>
+            <div class="details_text space_between">
+                <div class="details_text_card">
+                    <div class="details_card_image">
+                        <img src="/assets/verified.svg" alt="verified icon">
+                    </div>
+                    <div class="details_card_text">
+                        <h3 class="details_card_header">Lifetime Warranty</h3>
+                        <p class="details_sub_header">
+                            All our products — whether we make them or not — are backed by our lifetime warranty.
+                        </p>
+                    </div>
+                </div>
+                <div class="details_text_card">
+                    <div class="details_card_image">
+                        <img src="/assets/cart1.svg" alt="cart icon">
+                    </div>
+                    <div class="details_card_text">
+                        <h3 class="details_card_header">Shopping Experience</h3>
+                        <p class="details_sub_header">
+                            All our products — whether we make them or not — are backed by our lifetime warranty.
+                        </p>
+                    </div>
+                </div>
+                <div class="details_text_card">
+                    <div class="details_card_image">
+                        <img src="/assets/transport.svg" alt="transport icon">
+                    </div>
+                    <div class="details_card_text">
+                        <h3 class="details_card_header">On-time Delivery</h3>
+                        <p class="details_sub_header">
+                            All our products — whether we make them or not — are backed by our lifetime warranty.
+                        </p>
+                    </div>
+                </div>
+                <div class="details_text_card">
+                    <div class="details_card_image">
+                        <img src="/assets/chat.svg" alt="chat icon">
+                    </div>
+                    <div class="details_card_text">
+                        <h3 class="details_card_header">Best in Class Service</h3>
+                        <p class="details_sub_header">
+                            All our products — whether we make them or not — are backed by our lifetime warranty.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section owners -->
+
+    <section class="shop_local owners">
+        <div class="container flex_end relative">
+            <div class="shop_local_right_content">
+                <div class="shop_local_text_wrapper" id="owners_text_wrapper">
+                    <h2 class="shop_local_header">Meet the Owners</h2>
+                    <p class="shop_local_paragraph">
+                        John and Jane met on a backpacking adventure in Nepal. John, a former sheep shearer, went on the trip to get some clarity about his next adventures in life. Jane — a Peloton instructor — went on the trip to explore the landscape in Nepal. </p>
+                    <p class="shop_local_paragraph">
+                        While on the trip, John and Jane realized that they had one common love — the love for hiking and the love for being outdoors. </p>
+                    <p class="shop_local_paragraph">
+                        Returning back to their home state of Oklahoma, John and Jane hatched a plan to launch a retail store centered around their passions.
+                    </p>
+                    <p class="shop_local_paragraph">
+                        While John handled the sourcing of goods and customer service, Jane focused on the web + e-commerce side of the business, building this website in the best design platform on the web — Webflow!
+                    </p>
+                    <p class="shop_local_paragraph">
+                        In 1989, John and Jane Doe officially launched Acme Outdoors, the premiere store for outdoor enthusiasts around the state.
+                    </p>
+                    <p class="shop_local_paragraph">
+                        To this day, John and Jane return to Nepal yearly to ensure that they never forget their roots and where they came from.
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="shop_local_left_content" id="owners_left_content" style="color: #222;">
+
+            </div>
+        </div>
+        <div class="container" style="padding: 65px 0;">
+            <div class="owners_details space_around">
+                <div class="owner">
+                    <div class="owner_img_wrapper">
+                        <img src="assets/John Doe.png" alt="john doe" style="width: 100%;">
+                    </div>
+                    <div class="owner_text">
+                        <h3>John Doe</h3>
+                        <p style="margin: 10px 0;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
+                            lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                        </p>
+                    </div>
+                </div>
+                <div class="owner">
+                    <div class="owner_img_wrapper">
+                        <img src="assets/Jane Doe.png" alt="john doe" style="width: 100%;">
+                    </div>
+                    <div class="owner_text">
+                        <h3>Jane Doe</h3>
+                        <p style="margin: 10px 0;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
+                            lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- help section -->
+    <section class="hero" id="help">
+        <div class="container">
+            <div class="hero_text_wrapper">
+                <div style="width: 30%;">
+                    <h1 class="hero_header">Need Help?</h1>
+                    <p class="hero_text text">Need help or assistance? Our team is standing by to make sure you get the help you need. Whether you need to adjust an order or delivery details, we're ready to help!</p>
+                    <a href="contact.html" class="hero_button">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="footer_top space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="social_media_icons_wrapper">
+                    <img src="assets/Twitter_White.svg" alt="twitter icon">
+                    <img src="assets/Facebook.svg" alt="facebook icon">
+                    <img src="assets/Insta.svg" alt="instagram icon">
+                </div>
+            </div>
+            <div class="footer_bottom">
+                made In <a href="#" style="color: #eb5757;text-decoration: underline;">webflow</a>. © 2020.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

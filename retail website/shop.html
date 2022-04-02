@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/Favicon.png">
+    <title>Website Of Shop</title>
+</head>
+
+<body>
+
+    <!-- banner and navigation -->
+    <nav>
+        <div class="banner">
+            <div class="container">
+                <p class="text"><a href="announcement.html" class="link">Announcement</a> How we're responding to COVID-19</p>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="container space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="links_wrapper">
+                    <ul class="pages">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li class="cart_button">
+                            <img class="cart_img" src="assets/cart.svg" alt="cart button">
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    <button class="burger_btn"><i class="fa fa-bars" id="burger_icon"></i></button>
+                </div>
+                <div class="responsive_nav_wrapper">
+                    <ul class="pages" id="responisve_pages_list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="cart_header space_between">
+                <h4>Your Cart</h4>
+                <i class="fa fa-close"></i>
+            </div>
+            <hr>
+            <div class="cart_items_wrapper">
+                <p>No Items Found</p>
+            </div>
+        </div>
+
+        <div class="cart_darken_background"></div>
+
+    </nav>
+
+
+    <!-- main section of shop page -->
+
+    <main class="shop_page_main">
+        <div class="main_header_wrapper">
+            <div class="container">
+                <h1>Shop Our Products</h1>
+            </div>
+        </div>
+        <div class="fetured_item_wrapper">
+            <div class="container fetured_item">
+                <div class="name_price">
+                    <h3>White Tent</h3>
+                    <div>$ 200.00 USD</div>
+                </div>
+                <div class="word">
+                    Featured item
+                </div>
+            </div>
+        </div>
+        <div class="main_products">
+            <div class="container main_products_wrapper">
+                <div class="filter_btn_wrapper">
+                    <h2>Shop by Category</h2>
+                    <a class="hero_button active" id="filter_btn">All</a>
+                    <a class="hero_button" id="filter_btn">Gift Cards</a>
+                    <a class="hero_button" id="filter_btn">Tents</a>
+                    <a class="hero_button" id="filter_btn">Accessories</a>
+                    <a class="hero_button" id="filter_btn">Packs</a>
+                </div>
+                <div class="links_wrapper produts_bottom_content" id="shop_page_products">
+                    <div class="support_cart prod_cart">
+                        <div class="support_cart_header product_card_picture" style="background-image: url(assets/girl.jpg);">
+
+                        </div>
+                        <div class="support_cart_text product_cart_text" style="color: #333;">
+                            <div style="margin-bottom:10px;font-size: 20px;">White Tent</div>
+                            <strong style="font-size:14px;">$ 200.00 USD</strong>
+                            <a href="inner.html" class="hero_button products_button">Details</a>
+                        </div>
+                    </div>
+
+                    <div class="support_cart prod_cart">
+                        <div class="support_cart_header product_card_picture" style="background-image: url(assets/glass.jpg);">
+
+                        </div>
+                        <div class="support_cart_text product_cart_text" style="color: #333;">
+                            <div style="margin-bottom:10px;font-size: 20px;">Tin Coffee Tumbler</div>
+                            <strong style="font-size:14px;">$ 35.00 USD</strong>
+                            <a href="inner.html" class="hero_button products_button">Details</a>
+                        </div>
+                    </div>
+
+                    <div class="support_cart prod_cart">
+                        <div class="support_cart_header product_card_picture" style="background-image: url(assets/bag.jpg);">
+                            <div>SALE</div>
+                        </div>
+                        <div class="support_cart_text product_cart_text" style="color: #333;">
+                            <div style="margin-bottom:10px;font-size: 20px;">Blue Canvas Pack</div>
+                            <strong style="font-size:14px;">$ 95.00 USD<del style="text-decoration: line-through; color: #eb5757;margin-left: 5px;">$ 145.00 USD</del></strong>
+                            <a href="inner.html" class="hero_button products_button">Details</a>
+                        </div>
+                    </div>
+
+                    <div class="support_cart prod_cart">
+                        <div class="support_cart_header product_card_picture" style="background-image: url(assets/bag2.jpg);">
+                            <div>SALE</div>
+                        </div>
+                        <div class="support_cart_text product_cart_text" style="color: #333;">
+                            <div style="margin-bottom:10px;font-size: 20px;">Green Canvas Pack</div>
+                            <strong style="font-size:14px;">$ 95.00 USD<del style="text-decoration: line-through; color: #eb5757;margin-left: 5px;">$ 145.00 USD</del></strong>
+                            <a href="inner.html" class="hero_button products_button">Details</a>
+                        </div>
+                    </div>
+
+                    <div class="support_cart prod_cart">
+                        <div class="support_cart_header product_card_picture" style="background-image: url(assets/gift-card.jpg);">
+
+                        </div>
+                        <div class="support_cart_text product_cart_text" style="color: #333;">
+                            <div style="margin-bottom:10px;font-size: 20px;">Gift Card</div>
+                            <strong style="font-size:14px;">$ 25.00 USD</strong>
+                            <a href="inner.html" class="hero_button products_button">Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="footer_top space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="social_media_icons_wrapper">
+                    <img src="assets/Twitter_White.svg" alt="twitter icon">
+                    <img src="assets/Facebook.svg" alt="facebook icon">
+                    <img src="assets/Insta.svg" alt="instagram icon">
+                </div>
+            </div>
+            <div class="footer_bottom">
+                made In <a href="#" style="color: #eb5757;text-decoration: underline;">webflow</a>. © 2020.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

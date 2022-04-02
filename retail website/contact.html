@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/Favicon.png">
+    <title>Website Of Shop</title>
+</head>
+
+<body>
+
+    <!-- banner and navigation -->
+    <nav>
+        <div class="banner">
+            <div class="container">
+                <p class="text"><a href="announcement.html" class="link">Announcement</a> How we're responding to COVID-19</p>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="container space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="links_wrapper">
+                    <ul class="pages">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li class="cart_button">
+                            <img class="cart_img" src="assets/cart.svg" alt="cart button">
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    <button class="burger_btn"><i class="fa fa-bars" id="burger_icon"></i></button>
+                </div>
+                <div class="responsive_nav_wrapper">
+                    <ul class="pages" id="responisve_pages_list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="cart_header space_between">
+                <h4>Your Cart</h4>
+                <i class="fa fa-close"></i>
+            </div>
+            <hr>
+            <div class="cart_items_wrapper">
+                <p>No Items Found</p>
+            </div>
+        </div>
+
+        <div class="cart_darken_background"></div>
+
+    </nav>
+
+
+    <!-- hero section -->
+    <section class="hero" id="contact_page_hero">
+        <div class="container">
+            <div class="hero_text_wrapper contact_hero_text_wrapper">
+                <div style="width: 60%;" class="contact_text_width">
+                    <h1 class="hero_header">Contact Acme Outdoors</h1>
+                    <div id="contact_hero_cards_wrapper">
+                        <div class="contact_hero_card">
+                            <div class="contact_hero_card_icon_wrapper">
+                                <img src="assets/chat.svg" alt="chat icon">
+                            </div>
+                            <div class="contact_hero_text">
+                                <h2 style="margin: auto;">Contact Us</h2>
+                                <p>
+                                    Just want to say hi? We'd love to hear from you. We love our customers and community!
+                                </p>
+                                <a href="#m1" class="hero_button products_button" id="donate_btn" style="font-size: 16px;">Send Us A Message</a>
+                            </div>
+                        </div>
+                        <div class="contact_hero_card">
+                            <div class="contact_hero_card_icon_wrapper">
+                                <img src="assets/chat-warning.svg" alt="chat icon">
+                            </div>
+                            <div class="contact_hero_text">
+                                <h2 style="margin: auto;">Get Support</h2>
+                                <p>
+                                    Have an issue with an order or with a product you purchased from us? Fill out our support form.
+                                </p>
+                                <a href="#" class="hero_button products_button" id="donate_btn" style="font-size: 16px;">Contact Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="contact_main_section" id="m1">
+        <div class="container space_around">
+            <div class="contact_information">
+                <h2 style="margin-bottom: 10px;">Contact Us</h2>
+                <address>
+                    <p>Acme Outdoors</p>
+                    <p>123 Rainy Street</p>
+                    <p>Oklahoma City, OK 73129</p>
+                </address>
+
+                <div class="number_tel">
+                    <p><strong>General Inquiries:</strong>(405) 555-5555</p>
+                    <p><strong>Customer Support:</strong>(405) 555-5556</p>
+                </div>
+            </div>
+
+            <div class="form_wrapper">
+                <h2 style="margin-bottom: 10px;">Contact Form</h2>
+                <p style="margin-bottom: 10px;">Send us a message and we'll get back to you as soon as we can!</p>
+                <form action="contact.html" method="post">
+                    <label for="name" style="display: block;margin-bottom: 5px;">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" class="contact_input">
+                    <label for="email" style="display: block;margin-bottom: 5px;">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email Address" class="contact_input">
+                    <label for="text" style="display: block;margin-bottom: 5px;">Your Message</label>
+                    <textarea style="min-height:70px ;" name="text" id="text" placeholder="Enter Your Message" cols="30" rows="30" class="contact_input"></textarea>
+                    <input type="submit" value="Submit" class="hero_button" id="contact_form_submit_btn" onclick="event.preventDefault()">
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="footer_top space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="social_media_icons_wrapper">
+                    <img src="assets/Twitter_White.svg" alt="twitter icon">
+                    <img src="assets/Facebook.svg" alt="facebook icon">
+                    <img src="assets/Insta.svg" alt="instagram icon">
+                </div>
+            </div>
+            <div class="footer_bottom">
+                made In <a href="#" style="color: #eb5757;text-decoration: underline;">webflow</a>. © 2020.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

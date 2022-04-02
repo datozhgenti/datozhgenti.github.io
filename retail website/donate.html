@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/Favicon.png">
+    <title>Website Of Shop</title>
+</head>
+
+<body>
+
+    <!-- banner and navigation -->
+    <nav>
+        <div class="banner">
+            <div class="container">
+                <p class="text"><a href="announcement.html" class="link">Announcement</a> How we're responding to COVID-19</p>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="container space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="links_wrapper">
+                    <ul class="pages">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li class="cart_button">
+                            <img class="cart_img" src="assets/cart.svg" alt="cart button">
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    <button class="burger_btn"><i class="fa fa-bars" id="burger_icon"></i></button>
+                </div>
+                <div class="responsive_nav_wrapper">
+                    <ul class="pages" id="responisve_pages_list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="cart_header space_between">
+                <h4>Your Cart</h4>
+                <i class="fa fa-close"></i>
+            </div>
+            <hr>
+            <div class="cart_items_wrapper">
+                <p>No Items Found</p>
+            </div>
+        </div>
+
+        <div class="cart_darken_background"></div>
+
+    </nav>
+
+
+    <!-- hero section -->
+    <section class="hero" id="donate_hero">
+        <div class="container">
+            <div class="hero_text_wrapper" id="donate_hero_text_wrapper">
+                <div style="width: 60%;">
+                    <h1 class="hero_header">Here at Acme Outdoors</h1>
+                    <div style="color: white;font-size: 30px;margin: 0 auto;margin-bottom: 15px;">
+                        <p class="subheader_donate">every dollar counts</p>
+                    </div>
+                    <p class="hero_text text">
+                        Acme Outdoors is more than just a company, we're a community of people who care for one another and for our city. During this time, due to shelter in place orders, only a select few of our staff are able to work. Any donations you make to Acme will help
+                        make sure our employees are cared for and can stay safe in these uncertain times.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- donate main section -->
+    <main class="donate_main_section">
+        <div class="container">
+            <div class="donate_btns_wrapper">
+                <a href="inner.html" class="hero_button products_button" id="donate_btn">donate 100$</a>
+                <a href="inner.html" class="hero_button products_button" id="donate_btn">donate 50$</a>
+                <a href="inner.html" class="hero_button products_button" id="donate_btn">donate 25$</a>
+                <a href="inner.html" class="hero_button products_button" id="donate_btn">donate 15$</a>
+                <a href="inner.html" class="hero_button products_button" id="donate_btn">donate 5$</a>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="footer_top space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="social_media_icons_wrapper">
+                    <img src="assets/Twitter_White.svg" alt="twitter icon">
+                    <img src="assets/Facebook.svg" alt="facebook icon">
+                    <img src="assets/Insta.svg" alt="instagram icon">
+                </div>
+            </div>
+            <div class="footer_bottom">
+                made In <a href="#" style="color: #eb5757;text-decoration: underline;">webflow</a>. © 2020.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

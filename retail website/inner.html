@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/Favicon.png">
+    <title>Website Of Shop</title>
+</head>
+
+<body>
+
+
+
+    <!-- banner and navigation -->
+    <nav>
+        <div class="banner">
+            <div class="container">
+                <p class="text"><a href="announcement.html" class="link">Announcement</a> How we're responding to COVID-19</p>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="container space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="links_wrapper">
+                    <ul class="pages">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li class="cart_button">
+                            <img class="cart_img" src="assets/cart.svg" alt="cart button">
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    <button class="burger_btn"><i class="fa fa-bars" id="burger_icon"></i></button>
+                </div>
+                <div class="responsive_nav_wrapper">
+                    <ul class="pages" id="responisve_pages_list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="donate.html">donate</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="cart_header space_between">
+                <h4>Your Cart</h4>
+                <i class="fa fa-close"></i>
+            </div>
+            <hr>
+            <div class="cart_items_wrapper">
+                <p>No items found</p>
+            </div>
+        </div>
+
+        <div class="cart_darken_background"></div>
+
+    </nav>
+
+
+    <!-- main section of shop page -->
+
+    <main class="shop_page_main inner_page_main">
+        <div class="main_header_wrapper">
+            <div class="container">
+                <h1 class="product_name" style="text-transform: capitalize;"></h1>
+            </div>
+        </div>
+
+        <div class="inner_product_wrapper">
+            <div class="container">
+                <div class="support_cart" id="inner_card">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="footer_top space_between">
+                <div class="logo_wrapper">
+                    <a href="index.html"><img src="assets/logo.svg" alt="logo of company"></a>
+                </div>
+                <div class="social_media_icons_wrapper">
+                    <img src="assets/Twitter_White.svg" alt="twitter icon">
+                    <img src="assets/Facebook.svg" alt="facebook icon">
+                    <img src="assets/Insta.svg" alt="instagram icon">
+                </div>
+            </div>
+            <div class="footer_bottom">
+                made In <a href="#" style="color: #eb5757;text-decoration: underline;">webflow</a>. © 2020.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script>
+        try {
+            var innerProduct = JSON.parse(localStorage.innerProduct);
+        } catch (e) {
+            console.log(e.error);
+        }
+
+        const innerProductWrapper = document.querySelector("#inner_card");
+        const productNameHeader = document.querySelector(".product_name");
+
+        productNameHeader.textContent = innerProduct.name;
+
+        innerProductWrapper.innerHTML += `
+        <div class="support_cart_header product_card_picture" id="inner_card_img" style='background-image:${innerProduct.imgUrl};'>
+
+       </div>
+       <div class="support_cart_text product_cart_text" style="color: #333;text-align: start!important;" id="inner_card_text">
+            <div style="margin-bottom:10px;font-size: 40px;text-transform: capitalize;" id="inner_product_name">${innerProduct.name}</div>
+            <strong style="font-size:14px;" id="inner_product_price">${innerProduct.price}</strong>
+        <div>
+            <input type="number" min="1" value="1" class="contact_input" id="inner_input">
+            <a class="hero_button" id="add_to_card_btn">Add To Cart</a>
+        </div>
+        <div class="announcement_text" style="margin-top: 20px;">
+            <h2>What's a Rich Text element?</h2>
+            <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.</p>
+            <h4>Static and dynamic content editing</h4>
+             <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element
+            to that field in the settings panel. Voila!</p>
+            <h4>How to customize formatting for each rich text</h4>
+            <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the "When inside of" nested selector system. ‍</p>
+        </div>
+        <div class="inner_main_bottom">
+            <h3>Tweet about #AcmeOutdoors products</h3>
+            <div>
+                <a><i class="fa fa-twitter"></i> twitter</a>
+            </div>
+         </div>
+
+       </div>`;
+    </script>
+</body>
+
+</html>
