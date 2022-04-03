@@ -132,11 +132,11 @@ class Product {
 addToCartBtn.forEach(function(value, index, addToCartBtn) {
     addToCartBtn[index].addEventListener("click", function() {
 
-        if (localStorage.length === 0) {
+        if (localStorage.getItem('cartItem') === null) {
             productsInCart.push(new Product(productImg[index].src,
                 productName[index].innerText, productPrice[index].innerText,
                 Number(productQuantity[index].value)));
-        } else if (localStorage.length > 0) {
+        } else if (localStorage.getItem('cartItem') !== null) {
             let product = new Product(productImg[index].src,
                 productName[index].innerText, productPrice[index].innerText,
                 Number(productQuantity[index].value));
@@ -231,7 +231,7 @@ function addToCart(productsInCart) {
 function cartProductsCount(productsInCart) {
     let count = 0;
 
-    if (localStorage.length != 0) {
+    if (localStorage.getItem("cartItems") !== null) {
         for (let i = 0; i < productsInCart.length; i++) {
             count += productsInCart[i].quantity;
         }
