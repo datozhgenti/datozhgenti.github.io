@@ -156,7 +156,7 @@ $(document).ready(() => {
         if (localStorageCartItemsEmpty()) {
             var cartItems = [];
         } else {
-            var cartItems = JSON.parse(localStorage.cartItems);
+            var cartItems = JSON.parse(localStorage.acmeCartItems);
             changeDefaultCartStyle();
             addItemsInCart(cartItems);
             removeFromCart(cartItems);
@@ -185,13 +185,13 @@ $(document).ready(() => {
                 cartItems.push(new Product(productImg, productName, productPrice, undefined, undefined, quantity));
             }
 
-            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+            localStorage.setItem("acmeCartItems", JSON.stringify(cartItems));
 
-            addItemsInCart(JSON.parse(localStorage.cartItems));
+            addItemsInCart(JSON.parse(localStorage.acmeCartItems));
 
-            removeFromCart(JSON.parse(localStorage.cartItems));
+            removeFromCart(JSON.parse(localStorage.acmeCartItems));
 
-            productInputChange(JSON.parse(localStorage.cartItems));
+            productInputChange(JSON.parse(localStorage.acmeCartItems));
 
         });
     }
@@ -222,7 +222,11 @@ $(document).ready(() => {
 
 
     function localStorageCartItemsEmpty() {
-        return localStorage.length < 2;
+        if (localStorage.getItem("acmeCartItems") === null) {
+            return true;
+        }
+
+        return false;
     }
 
 
@@ -286,12 +290,12 @@ $(document).ready(() => {
 
                 cartItems.splice(index, 1);
 
-                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                localStorage.setItem("acmeCartItems", JSON.stringify(cartItems));
 
-                addToCart(JSON.parse(localStorage.cartItems));
+                addToCart(JSON.parse(localStorage.acmeCartItems));
 
-                if (localStorage.cartItems === '[]') {
-                    localStorage.removeItem("cartItems");
+                if (localStorage.acmeCartItems === '[]') {
+                    localStorage.removeItem("acmeCartItems");
                     DefaultCartStyle();
                 }
             });
@@ -321,11 +325,11 @@ $(document).ready(() => {
 
                 cartItems[index].quantity = Number($(".cart_input")[index].value);
 
-                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                localStorage.setItem("acmeCartItems", JSON.stringify(cartItems));
 
                 $(".cart_items_wrapper").empty();
 
-                addToCart(JSON.parse(localStorage.cartItems));
+                addToCart(JSON.parse(localStorage.acmeCartItems));
 
 
             });
