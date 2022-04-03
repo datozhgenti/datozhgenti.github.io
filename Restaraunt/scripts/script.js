@@ -296,7 +296,7 @@ function removeFromCart(removeBtn) {
             } else {
                 cartContentArea.innerHTML = "";
                 cartCount.innerText = cartProductsCount(productsInCart);
-                localStorage.clear();
+                localStorage.removeItem("cartItem");
                 defaulCartStyleChange(0)
             }
         });
