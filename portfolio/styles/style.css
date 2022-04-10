@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
@@ -282,6 +286,7 @@ header h1 {
 
 .projects img {
     width: 100%;
+    max-height: 352px;
 }
 
 .projects img:hover {
